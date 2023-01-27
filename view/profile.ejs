@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile Page</title>
+</head>
+
+
+
+<body>
+
+    <h1 align="center">Welcome</h1>
+
+    <table align="center" border="2">
+        <!-- <h1>Profile Page</h1> -->
+        <tr>
+            <h1>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </h1>
+        </tr>
+        <tr>
+            <td>
+                <%= user.name %>
+            </td>
+            <td>
+
+                <%= user.email %>
+            </td>
+            <td>
+                <%= user.city %>
+            </td>
+
+        </tr>
+
+
+        <ul>
+                    <% user.skils.forEach(function (item) { %>
+                    <li><%= item %></li>
+                 <% }) %>
+        </ul>
+
+
+    </table>
+</body>
+
+</html>
